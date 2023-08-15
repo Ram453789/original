@@ -1,0 +1,34 @@
+#include <stdio.h>
+
+#include <locale.h>
+#include <windows.h>
+int main (int argc,char **argv)
+{
+	// Declaración de variables
+	 char cadena[254];
+
+    // Establecer el idioma a español
+    SetConsoleCP(1252); // Cambiar STDIN -  Para máquinas Windows
+    SetConsoleOutputCP(1252); // Cambiar STDOUT - Para máquinas Windows
+
+    #define RESET_COLOR  "\x1b[0m"
+    #define VERDE_F        "\x1b[42m"
+    #define AMARILLO_T "\x1b[33m"
+    #define ROJO_T     "\x1b[31m"
+
+    
+	printf(VERDE_F "Primera Generación (1940-1956):\n\n" RESET_COLOR );
+	printf(AMARILLO_T "Válvulas: Utilizaban válvulas de vacío para la lógica y el procesamiento de datos, lo que generaba mucho calor y requería un mantenimiento constante.\n\n");
+	printf("Tamaño y Consumo de Energía: Eran enormes y ocupaban salas enteras debido al tamaño de las válvulas y otros componentes. Además, consumían una cantidad significativa de energía eléctrica.\n\n");
+	printf("Programación Manual: La programación se realizaba de manera manual, conectando cables y enchufando tableros perforados para definir las operaciones que la computadora debía realizar.\n\n" RESET_COLOR);
+	printf(VERDE_F "Segunda Generación (1956-1963):\n\n" RESET_COLOR);
+	printf(ROJO_T"Transistores: Reemplazaron las válvulas, lo que resultó en computadoras más pequeñas, más confiables y eficientes en términos de energía.\n\n");
+	printf("Sistemas de Almacenamiento: Introdujeron sistemas de almacenamiento más avanzados, como cintas magnéticas y discos duros, lo que mejoró la capacidad para retener y acceder a los datos.\n\n");
+	printf("Lenguajes de Programación de Alto Nivel: Se desarrollaron lenguajes de programación de alto nivel como Fortran y COBOL, lo que facilitó la programación y la creación de software más complejo.\n\n" RESET_COLOR);
+	printf(VERDE_F "Tercera Generación (1964-1971):\n\n" RESET_COLOR);
+	printf(AMARILLO_T"Circuitos Integrados: Se introdujeron los circuitos integrados (chips), lo que permitió una mayor miniaturización de los componentes electrónicos y una mayor eficiencia en el procesamiento.\n\n");
+	printf("Mayor Velocidad y Capacidad: Las computadoras de esta generación eran más rápidas y podían manejar tareas más complejas debido a la mayor capacidad de procesamiento.\n\n");
+	printf("Sistemas Operativos y Multiprogramación: Surgieron sistemas operativos más avanzados que permitían una gestión más eficiente de los recursos de la computadora. Se adoptó la multiprogramación para ejecutar múltiples tareas simultáneamente.\n\n"RESET_COLOR);
+	printf("Estas características representan algunas de las diferencias clave entre las primeras generaciones de computadoras y cómo evolucionaron a lo largo del tiempo en términos de tecnología, tamaño y capacidades.\n\n");
+	return 0;
+}
